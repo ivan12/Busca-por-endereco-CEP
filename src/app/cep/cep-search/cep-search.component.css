@@ -1,0 +1,44 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+hr {
+  border: none;
+  border-top: 2px dashed lightslategray;
+  color: #fff;
+  background-color: #fff;
+  margin-top: 0px;
+  height: 1px;
+  width: 100%;
+}
+
+.consulta-cep {
+  width: 100%;
+  min-height: 70px;
+  padding: 20px;
+}
+
+.busca-enderecos {
+  background-color: lightslategrey;
+  border-radius: 10px;
+}
+
+.input-cep-busca {
+  width: 100%;
+  margin-top: 4px;
+  border-right: 20px;
+  height: 40px;
+}
+
+.input-btn-busca {
+  border-radius: 30px;
+  margin-top: 5px;
+}
+
+.title-busca {
+  color: #fff !important;
+  text-align: end;
+}
+
+.feedback-pesquisa {
+  margin-top: 8px;
+  font-size: 1.25rem;
+}

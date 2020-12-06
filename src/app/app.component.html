@@ -1,0 +1,22 @@
+<html>
+  <head></head>
+  <body class="app col-12">
+    <div class="row">
+      <div class="logo col-md-2">
+        <p>Logo</p>
+      </div>
+      <div class="menu col-md-10">
+        <nav>
+          <button class="menuButton" routerLink="/home" routerLinkActive="active">Home</button>
+          <button class="menuButton" routerLink="/cep" routerLinkActive="active">Endereços</button>
+        </nav>
+      </div>
+    </div>
+    <div class="row">
+      <div class="body" [@routeAnimation]="getAnimationData(routerOutlet)">
+        <router-outlet #routerOutlet="outlet"></router-outlet>
+      </div>
+    </div>
+  </body>
+</html>
+
