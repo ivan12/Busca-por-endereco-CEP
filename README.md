@@ -10,5 +10,9 @@ Após instalar todas as dependencias rodar o comando:
 
 ```npm start```
 
+# 3- Acessar Aplicação
+
+http://localhost:4200/
+
 
 
