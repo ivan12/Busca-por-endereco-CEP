@@ -15,4 +15,11 @@ Após instalar todas as dependencias rodar o comando:
 http://localhost:4200/
 
 
+# Obs
+
+Para verificar a versão utilizada (Angular...):
+
+```ng -v```
+
+
 
