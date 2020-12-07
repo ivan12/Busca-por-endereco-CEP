@@ -13,11 +13,12 @@
     <div class="row table-body" *ngFor="let cep of ceps">
       <div class="col-3">{{ cep.cep }}</div>
       <div class="col-5">{{ cep.uf }}, {{ cep.localidade }}, {{ cep.bairro }}, {{ cep.complemento }}</div>
-      <div class="col-3">{{ cep.ddd }}</div>
+      <div class="col-3">{{ cep.data | date: "dd/MM/yyyy HH:mm:ss" }}</div>
       <div class="col-1">
         <a (click)="removeIten(cep)">[ X ]</a>
       </div>
     </div>
+    <span class="badge badge-secondary badge-custom">Salvo em Storage</span>
   </div>
 
   <div class="row table-sem-dados" *ngIf="ceps?.length <= 0">

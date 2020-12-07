@@ -7,8 +7,10 @@
         <div class="col-md-1">
             <button class="input-btn-busca" (click)="verificaCEP(cepPesquisa) ? cepList.pesquisarNaLista(cepPesquisa) : ''"> Buscar </button>
         </div>
-        <div class="col-md-3 feedback-pesquisa">
-            <h3 class="">{{feedbackPesquisa}}</h3>
+        <div class="col-md-3">
+            <a (click)="cleanFeedback()">
+                <span *ngIf="feedbackPesquisa" class="feedback-pesquisa">{{feedbackPesquisa}}</span>
+            </a>
         </div>
         <div class="col-md-3">
             <h2 class="title-busca">Busca de Endereços</h2>

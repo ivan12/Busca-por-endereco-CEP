@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CepDetailComponent } from './cep/cep-detail/cep-detail.component';
 import { CepListComponent } from './cep/cep-list/cep-list.component';
 import { CepSearchComponent } from './cep/cep-search/cep-search.component';
 import { HomeWelcomeComponent } from './home/home-welcome/home-welcome.component';
@@ -18,9 +17,6 @@ const appRoutes: Routes = [
   { 
     path: 'cep',  
     component: CepSearchComponent, data: { animation: 'ceps' }
-  },
-  { path: 'cep/:id', 
-    component: CepDetailComponent, data: { animation: 'cep' }
   },
   {
     path: '**',

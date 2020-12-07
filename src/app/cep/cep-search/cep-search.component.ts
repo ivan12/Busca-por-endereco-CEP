@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-cep-search',
@@ -14,6 +14,10 @@ export class CepSearchComponent {
   setFeedback(e) {
     console.log('setFeedback e = ', e)
     this.feedbackPesquisa = e
+  }
+
+  cleanFeedback() {
+    this.feedbackPesquisa = undefined
   }
 
   trim(strTexto)

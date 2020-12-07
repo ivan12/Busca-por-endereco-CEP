@@ -25,8 +25,11 @@ export class CepListComponent implements OnInit, OnDestroy {
 
   pesquisarNaLista(pesquisa) {
     this.feedback.emit("Enviando Requisição...")
-    this.subscription = this.cepService.getCep(pesquisa).subscribe(res => {
+    this.subscription = this.cepService.getCep(pesquisa).subscribe((res: any) => {
       if(res) {
+        // seta data
+        res.data = new Date()
+        
         // adiona na lista
         this.ceps.push(res)
         

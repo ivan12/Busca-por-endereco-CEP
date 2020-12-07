@@ -5,6 +5,15 @@
   border: 2px dashed lightslategray;
 }
 
+.badge-custom {
+  font-size: small;
+  margin-top: 10px;
+  margin-left: 45%;
+  position: absolute;
+  background-color: #607d8b;
+  align-self: center;
+}
+
 .table-head {
   padding: 10px;
   border-bottom: 2px dashed lightslategray;
